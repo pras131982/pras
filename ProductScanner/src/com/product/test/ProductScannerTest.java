@@ -58,9 +58,12 @@ public class ProductScannerTest {
 		assertNotNull(productScannerUtil);
 		assertNotNull(productScannerProcessor);
 		
-		System.out.println(ProductScannerUtil.getHmproduct());
+		
+		System.out.println("Product with Different Categories with Price in INR::"+ProductScannerUtil.getHmproduct());
+		System.out.println("Sale Tax % on Different Categories::"+ProductScannerUtil.getHmsaletax());
+		
 		HashMap<String,Object> hmOutput = productScannerProcessor.scanProductAndGetBill(alInput);
-		System.out.println(hmOutput);
+		System.out.println("Output::"+hmOutput);
 		
 		//assert if its success case
 		String stAppStatusMessage = (String) hmOutput.get("appStatusMessage");
