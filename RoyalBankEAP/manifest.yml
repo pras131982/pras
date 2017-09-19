@@ -1,0 +1,6 @@
+---
+applications:
+- name: RoyalBank
+  memory: 512M
+  host: royalbank
+  domain: mybluemix.net
